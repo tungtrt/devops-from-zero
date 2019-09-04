@@ -1,20 +1,21 @@
-# Install Nexus (Ubuntu) :stars:
+# Cài đặt (Ubuntu) :stars:
 
-## Table Of Contents. :book:
+## Mục lục :book:
 
-1. [Prepare Evironment](#install-env)
-2. [Install Nexus](#install-nexus)
-    - [Application Directory](#application)
-    - [Data directory](#data)
-    - [Run Nexus](#run-nexus)
-3. [Run As Service](#run-as-service)
-    - [Create new user](#new-user)
-    - [Run as service with systemd](#systemd)
+1. [Cài đặt java](#install-env)
+2. [Cài đặt nexus](#install-nexus)
+    - [Thư mục ứng dụng](#application)
+    - [Thư mục dữ liệu](#data)
+    - [Chạy nexus](#run-nexus)
+3. [Chạy Nexus as Service](#run-as-service)
+    - [Tạo một người dùng mới](#new-user)
+    - [Chạy service với systemd](#systemd)
 
-----------------------------------------------------
+---
+
 <a id="install-env"></a>
 
-## Install Evironment. :gear:
+## Cài đặt java. :gear:
 
 - Nexus Repository Manager yêu cầu một  Java 8 Runtime Environment(JRE).  
 - Trước khi tiến hành cài đặt java cần tiến hành cập nhật các gói từ kho: ```sudo apt update```
@@ -24,11 +25,11 @@
 - Trong trường hợp không có đường dẫn cụ thể cần cập nhật cấu hình cho một phiên bản JDK hoặc JRE cụ thể. Để cài đặt một đường dẫn java cụ thể ta mở file ```bin/nexus``` trong thư mục cài đặt của nexus và thêm đường dẫn đến vị trí của java vào dòng ```INSTALL4J_JAVA_HOME_OVERRIDE```.
 - Ví dụ: ```INSTALL4J_JAVA_HOME_OVERRIDE=/usr/lib/jvm/openjdk-8``` 
 
-------------------------------------------------
+---
 
 <a id="install-nexus"></a>
 
-## Install Nexus. :wrench:
+## Cài đặt nexus. :wrench:
 
 - Để download Nexus truy cập vào trang [sonatype](https://help.sonatype.com/repomanager3/download)
 - Chọn link download phù hợp với hệ điều hành tương ứng. Vì ở đây sử dụng ubuntu nên ta tiến hành tải Nexus về với lệnh ***wget :*** ```wget https://download.sonatype.com/nexus/3/latest-unix.tar.gz``` trong thư mục ```opt``` (trên các máy unix thư mục ***opt*** thường được sử dụng để cài đặt các ứng dụng).
@@ -36,7 +37,7 @@
 
 <a id="application"></a>
 
-### Application directory (Installation directory)
+### Thư mục ứng dụng (thư mục cài đặt)
 
   - Thư mục này bao gồm ứng dụng ***Nexus Repository Management*** và các thành phần cần thiết như thư viện Java và những file cấu hình. Tên của thư mục này mặc định thường là ```nexus-{version-number}``` và nó thường được gọi là ```$install-dir``` trong bất kỳ đoạn code nào.
 
@@ -62,7 +63,7 @@
 
 <a id="data"></a>
 
-### Data directory
+### Thư mục dữ liệu
 
   - Thư mục dữ liệu bao gồm tất cả các kho chứa, thành phần và các dữ liệu khác mà được lưu trữ và quản lý bởi ***repository manage***. Thông thường thư mục dữ liệu được lưu trữ ở: ```../sonatype-work/nexus3``` và nó thường được gọi là ```$data-dir``` trong bất kỳ đoạn code nào.
   - Thư mục dữ liệu bao gồm những thư mục con mà bao gồm những thành phần, kho chứa, cấu hình và các dữ liệu khác.
@@ -80,7 +81,7 @@
 
 <a id="run-nexus"></a>
 
-### Run Nexus
+### Chạy nexus
 
 - Để chạy nexus chuyển đến thư mục /opt/nexus-3.18.1-01/bin rồi chạy lệnh ```./nexus run``` để chạy nexus, để có thể tắt trình quản lý kho lưu trữ khi đang chạy ta có thể sử dụng tổ hợp phím ```CTR C```.
 - Ngoài ra thay vì run ta còn có thể chạy nexus với các lệnh ```start```, ```stop```, ```restart```, ```force-reload```, ```status``` tương ứng với bắt đầu, dừng, khởi động lại, bắt buộc tải lại hay trạng thái của nexus.
@@ -89,15 +90,15 @@
 - Để có đầy đủ quyền truy cập thì cần phải dùng đến tài khoản admin khi lần đầu đăng nhập ta sẽ thấy thông báo nơi chứa mật khẩu tài khoản admin như sau:
 ![image](images/first-login.png)
 
----------------------------------------------
+---
 
 <a id="run-as-service"></a>
 
-## Run as service. :running_man:
+## Chạy nexus as service. :running_man:
 
 <a id="new-user"></a>
 
-### Create new user
+### Tạo người dùng mới
 
 - Ta có thể cài đặt cho nexus để chạy như một service bằng systemd.
 - Tạo một người dùng và trao đủ quyền để nó có thể chạy nexus service tiến hành tạo một user tên nexus: ```sudo adduser nexus``` cài không password cho user này.
@@ -113,7 +114,7 @@ sudo chown -R nexus:nexus /opt/sonatype-work
 
 <a id="systemd"></a>
 
-### Run as service with systemd
+### Chạy service với systemd
 
 - Sau đó tạo một file service là một unit file với ***systemd*** là ```nexus.service``` trong thư mục ```etc/systemd/system``` file này sẽ định nghĩa làm sao để start, stop... service đó .
 - Về cơ bản ***systemd*** là một nhóm các chương trình đặc biệt sẽ quản lý, vận hành và theo dõi các tiến trình khác hoạt động.
@@ -158,7 +159,6 @@ WantedBy=multi-user.target
 systemctl daemon-reload
 systemctl enable nexus.service
 systemctl start nexus.service
-
 ```
 
 - Trong đó:

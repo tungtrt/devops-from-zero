@@ -1,4 +1,4 @@
-# Create the process for a team development work with DevOps
+# Development Process
 
-![images](images/flow.jpg)
-
+## Development Process
+![images](images/process.jpg)

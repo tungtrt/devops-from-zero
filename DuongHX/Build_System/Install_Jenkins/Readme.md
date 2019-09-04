@@ -1,15 +1,16 @@
-# Install Jenkins (Ubuntu) :stars:
+# Cài đặt Jenkins (Ubuntu) :stars:
 
-## Table Of Contents. :book:
+## Mục lục :book:
 
-1. [Prepare Evironment](#prepare-env)
-2. [Install Jenkins](#install-jenkins)
-3. [Config Jenkins](#config-jenkins)
+1. [Cài đặt java](#prepare-env)
+2. [Cài đặt Jenkins](#install-jenkins)
+3. [Cấu hình Jenkins](#config-jenkins)
 
-------------------------------------------------
+---
+
 <a id="prepare-env"></a>
 
-## Prepare Evironment :gear:
+## Cài đặt java :gear:
 
 - Đầu tiên tiến hành cài đặt java.
 - Bởi vì jenkins không hỗ trợ tất cả các phiên bản java, nên chọn đúng version để việc cài đặt diễn ra đúng nhất:
@@ -20,11 +21,11 @@
 - Tiến hành cài đặt java 8 trên ubuntu ```sudo apt install openjdk-8-jre-headless```.
 - Sau khi cài đặt xong java tiến hành kiểm tra java đã được cài đặt hay chưa chạy lệnh ```java -version```.
 
--------------------------------------------------
+---
 
 <a id="install-jenkins"></a>
 
-## Install Jenkins :package:
+## Cài đặt Jenkins :package:
 
 - Trên Debian-based distributions như là Ubuntu ta có thể cài đặt Jenkins thông qua apt.
 - Trước khi tiến hành cài đặt ta tiến hành cập nhật chỉ mục gói và cập nhật phần mềm lên phiên bản mới nhất sẵn có:
@@ -57,11 +58,11 @@
     - ```systemctl enable jenkins``` chạy jenkins cùng với hệ thống.
     - ```systemctl disable jenkins``` vô hiệu hóa khi jenkins chạy cùng với hệ thống.
 
-------------------------------------------------------------------
+---
 
 <a id="config-jenkins"></a>
 
-  ## Config jenkins. :wrench:
+## Config jenkins. :wrench:
 
 - Sau khi cài đặt xong Jenkins ta tiến hành cấu hình nó.
 - Tiến hành truy cập vào Jenkins thông qua loopback address hoặc địa chỉ public ip ví dụ: http://52.15.143.213:8080/.
