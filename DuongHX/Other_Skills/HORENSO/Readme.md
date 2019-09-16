@@ -4,7 +4,14 @@
 
 ![image](https://japan.net.vn/images/stores/2018/11/27/horenso-la-gi.jpg)
 
-## HORENSO là gì
+## Mục lục :book:
+
+- [HORENSO là gì](#horenso)
+  - [HOKOKU](#hokoku)
+  - [RENNRAKU](#rennraku)
+  - [SOUDAN](#soudan)
+
+## HORENSO là gì <a id="horenso"></a>
 
 ---
 
@@ -12,10 +19,10 @@
 
 - HORENSO là viết tắt của 3 từ sau:
   - HO - HOKOKU : Báo cáo  ほう
-  - REM - RENKAKU : Liên lạc   れん
-  - SO - SODAN : Bàn bạc   そう
+  - REN - RENNRAKU : Liên lạc   れん
+  - SO - SOUDAN : Bàn bạc   そう
 
-### HO-HOKOKU: Báo cáo
+### HO-HOKOKU: Báo cáo <a id="hokoku"></a>
 
 ---
 
@@ -45,7 +52,7 @@
     - Văn phong thiếu tôn trọng.
     - Chỉ hỏi và tham khảo.
 
-### RENKAKU: Liên lạc
+### RENNRAKU: Liên lạc <a id="rennraku"></a>
 
 ---
 
@@ -63,3 +70,31 @@
   - Trong khi cả nhóm ngồi gần nhau thay vì truyền tin bằng miệng thì lại sử dụng email, các phần mềm để liên lạc với nhau.
   - Ít người biết.
   - Nội dung liên lạc khó hiểu, dài dòng người đọc khó hình dung.
+
+### SOUDAN: bàn bạc <a id="soudan"></a>
+
+---
+
+- Bàn bạc để đưa ra giải pháp giải quyết các vấn đề phức tạp, cho ta thêm nhiều góc nhìn từ mọi người để nhìn nhận vấn đề và chọn ra phương pháp thích hợp cho vấn đề của mình.
+
+![image](images/banbac.jpg)
+
+- ***Thế nào là cách bàn bạc tốt.***
+  - Mục đích rõ ràng
+  - Nên đưa ra quan điểm của mình về vấn đề.
+  - Càng đông người thì càng có nhiều góc nhìn, góp ý về vấn đề.
+  - Tiếp thu, ghi nhận các ý kiến đóng góp, không nên chỉ chăm chăm phản bác.
+  - Bàn bạc thì phải đi đến một kết quả cuối cùng.
+
+- ***Thế nào là cách bàn bạc không tốt.***
+  - Ít người nên ít đóng góp, ý kiến trùng lặp.
+  - Không tiếp thu ý kiến người khác.
+  - Không biết mục đích của việc bàn bạc.
+  - Không cho ra kết quả của việc bàn bạc.
+  - Mỗi người làm một hướng khác nhau.
+
+## Nguồn tham khảo
+
+- https://viblo.asia/p/ky-nang-horenso-3ZabG9VkvzY6
+- https://japan.net.vn/horenso-la-gi-bi-quyet-lam-viec-nhom-hieu-qua-cua-nguoi-nhat-lhm-3333.htm
+- https://hanoiscrum.net/hnscrum/agile-doc/tutorial/219-horenso-tuong-tac-nhom-hieu-qua
