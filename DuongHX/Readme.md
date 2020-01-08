@@ -14,3 +14,4 @@
 
 - Network. [Link](Other_Skills/Network)
 - HORENSO. [Link](Other_Skills/HORENSO)
+- Project Management. [Link](Other_Skills/Project_Management)
